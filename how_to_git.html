@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>how_to_git.html</title>
+  <meta name="generator" content="Haroopad 0.13.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>.hljs{display:block;overflow-x:auto;padding:.5em;background:#fdf6e3;color:#657b83;-webkit-text-size-adjust:none}.diff .hljs-header,.hljs-comment,.hljs-doctype,.hljs-javadoc,.hljs-pi,.lisp .hljs-string{color:#93a1a1}.css .hljs-tag,.hljs-addition,.hljs-keyword,.hljs-request,.hljs-status,.hljs-winutils,.method,.nginx .hljs-title{color:#859900}.hljs-command,.hljs-dartdoc,.hljs-hexcolor,.hljs-link_url,.hljs-number,.hljs-phpdoc,.hljs-regexp,.hljs-rules .hljs-value,.hljs-string,.hljs-tag .hljs-value,.tex .hljs-formula{color:#2aa198}.css .hljs-function,.hljs-built_in,.hljs-chunk,.hljs-decorator,.hljs-id,.hljs-identifier,.hljs-localvars,.hljs-title,.vhdl .hljs-literal{color:#268bd2}.hljs-attribute,.hljs-class .hljs-title,.hljs-constant,.hljs-link_reference,.hljs-parent,.hljs-type,.hljs-variable,.lisp .hljs-body,.smalltalk .hljs-number{color:#b58900}.css .hljs-pseudo,.diff .hljs-change,.hljs-attr_selector,.hljs-cdata,.hljs-header,.hljs-pragma,.hljs-preprocessor,.hljs-preprocessor .hljs-keyword,.hljs-shebang,.hljs-special,.hljs-subst,.hljs-symbol,.hljs-symbol .hljs-string{color:#cb4b16}.hljs-deletion,.hljs-important{color:#dc322f}.hljs-link_label{color:#6c71c4}.tex .hljs-formula{background:#eee8d5}.MathJax_Hover_Frame{border-radius:.25em;-webkit-border-radius:.25em;-moz-border-radius:.25em;-khtml-border-radius:.25em;box-shadow:0 0 15px #83A;-webkit-box-shadow:0 0 15px #83A;-moz-box-shadow:0 0 15px #83A;-khtml-box-shadow:0 0 15px #83A;border:1px solid #A6D!important;display:inline-block;position:absolute}.MathJax_Hover_Arrow{position:absolute;width:15px;height:11px;cursor:pointer}#MathJax_About{position:fixed;left:50%;width:auto;text-align:center;border:3px outset;padding:1em 2em;background-color:#DDD;color:#000;cursor:default;font-family:message-box;font-size:120%;font-style:normal;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;border-radius:15px;-webkit-border-radius:15px;-moz-border-radius:15px;-khtml-border-radius:15px;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_Menu{position:absolute;background-color:#fff;color:#000;width:auto;padding:5px 0;border:1px solid #CCC;margin:0;cursor:default;font:menu;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;z-index:201;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-khtml-border-radius:5px;box-shadow:0 10px 20px gray;-webkit-box-shadow:0 10px 20px gray;-moz-box-shadow:0 10px 20px gray;-khtml-box-shadow:0 10px 20px gray;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}.MathJax_MenuItem{padding:1px 2em;background:0 0}.MathJax_MenuArrow{position:absolute;right:.5em;color:#666}.MathJax_MenuActive .MathJax_MenuArrow{color:#fff}.MathJax_MenuArrow.RTL{left:.5em;right:auto}.MathJax_MenuCheck{position:absolute;left:.7em}.MathJax_MenuCheck.RTL{right:.7em;left:auto}.MathJax_MenuRadioCheck{position:absolute;left:.7em}.MathJax_MenuRadioCheck.RTL{right:.7em;left:auto}.MathJax_MenuLabel{padding:1px 2em 3px 1.33em;font-style:italic}.MathJax_MenuRule{border-top:1px solid #DDD;margin:4px 3px}.MathJax_MenuDisabled{color:GrayText}.MathJax_MenuActive{background-color:#606872;color:#fff}.MathJax_Menu_Close{position:absolute;width:31px;height:31px;top:-15px;left:-15px}#MathJax_Zoom{position:absolute;background-color:#F0F0F0;overflow:auto;display:block;z-index:301;padding:.5em;border:1px solid #000;margin:0;font-weight:400;font-style:normal;text-align:left;text-indent:0;text-transform:none;line-height:normal;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;box-shadow:5px 5px 15px #AAA;-webkit-box-shadow:5px 5px 15px #AAA;-moz-box-shadow:5px 5px 15px #AAA;-khtml-box-shadow:5px 5px 15px #AAA;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}#MathJax_ZoomOverlay{position:absolute;left:0;top:0;z-index:300;display:inline-block;width:100%;height:100%;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}#MathJax_ZoomFrame{position:relative;display:inline-block;height:0;width:0}#MathJax_ZoomEventTrap{position:absolute;left:0;top:0;z-index:302;display:inline-block;border:0;padding:0;margin:0;background-color:#fff;opacity:0;filter:alpha(opacity=0)}.MathJax_Preview{color:#888}#MathJax_Message{position:fixed;left:1px;bottom:2px;background-color:#E6E6E6;border:1px solid #959595;margin:0;padding:2px 8px;z-index:102;color:#000;font-size:80%;width:auto;white-space:nowrap}#MathJax_MSIE_Frame{position:absolute;top:0;left:0;width:0;z-index:101;border:0;margin:0;padding:0}.MathJax_Error{color:#C00;font-style:italic}.MathJax_Display{text-align:center;margin:1em 0;position:relative;display:block!important;text-indent:0;max-width:none;max-height:none;min-width:0;min-height:0;width:100%}.MathJax .merror{background-color:#FF8;color:#C00;border:1px solid #C00;padding:1px 3px;font-style:normal;font-size:90%}.MathJax .MJX-monospace{font-family:monospace}.MathJax .MJX-sans-serif{font-family:sans-serif}#MathJax_Tooltip{background-color:InfoBackground;color:InfoText;border:1px solid #000;box-shadow:2px 2px 5px #AAA;-webkit-box-shadow:2px 2px 5px #AAA;-moz-box-shadow:2px 2px 5px #AAA;-khtml-box-shadow:2px 2px 5px #AAA;filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true');padding:3px 4px;z-index:401;position:absolute;left:0;top:0;width:auto;height:auto;display:none}.MathJax{display:inline;font-style:normal;font-weight:400;line-height:normal;font-size:100%;font-size-adjust:none;text-indent:0;text-align:left;text-transform:none;letter-spacing:normal;word-spacing:normal;word-wrap:normal;white-space:nowrap;float:none;direction:ltr;max-width:none;max-height:none;min-width:0;min-height:0;border:0;padding:0;margin:0}.MathJax a,.MathJax img,.MathJax nobr{border:0;padding:0;margin:0;max-width:5000em;max-height:5000em;min-width:0;min-height:0;vertical-align:0;line-height:normal;text-decoration:none}img.MathJax_strut{border:0!important;padding:0!important;margin:0!important;vertical-align:0!important}.MathJax span{display:inline;position:static;border:0;padding:0;margin:0;vertical-align:0;line-height:normal;text-decoration:none}.MathJax nobr{white-space:nowrap!important}.MathJax img{display:inline!important;float:none!important}.MathJax *{transition:none;-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none}.MathJax_Processing{visibility:hidden;position:fixed;width:0;height:0;overflow:hidden}.MathJax_Processed{display:none!important}.MathJax_ExBox{display:block!important;overflow:hidden;width:1px;height:60ex;min-height:0;max-height:none}.MathJax .MathJax_EmBox{display:block!important;overflow:hidden;width:1px;height:60em;min-height:0;max-height:none}.MathJax .MathJax_HitBox{cursor:text;background:#fff;opacity:0;filter:alpha(opacity=0)}#MathJax_Tooltip *,.MathJax .MathJax_HitBox *{filter:none;opacity:1;background:0 0}@font-face{font-family:MathJax_Blank;src:url(about:blank)}.MathJax .noError{font-size:90%;text-align:left;color:#000;padding:1px 3px;border:1px solid}footer{position:fixed;font-size:.8em;text-align:right;bottom:0;margin-left:-25px;height:20px;width:100%}</style>
+</head>
+<body class="markdown haroopad">
+<h1 id="how-to-git"><a name="how-to-git" href="#how-to-git"></a>how to git</h1><ul>
+<li><p>リポジトリ</p>
+<blockquote>
+<p>プロジェクトの<strong>リビジョン(revirson=&gt;細かな修正のこと)と履歴</strong>を維持管理するのに必要な全情報を持つまさにデータベース</p>
+</blockquote>
+</li><li><p>gitリポジトリの実装の核心はオブジェクト格納領域</p>
+<ul>
+<li>ここに置くオブジェクトはブロブ、ツリー、コミット、タグの四つ<ul>
+<li>ブロブ…ファイルの各versionを表す</li><li>ツリー…1つのdirにある全ファイルのブロブのIDを記録</li><li>コミット…リポジトリに加えられた各変更のメタデータを保持</li><li>タグ…軽量タグと注釈タグ<blockquote>
+<p>コミットオブジェクトを指す</p>
+</blockquote>
+</li></ul>
+</li></ul>
+</li><li><p>Gitでは、Gitの管理下に置かれた、<strong>みなさんが実際に作業をしているディレクトリのことをワークツリー</strong>と呼びます。</p>
+<ul>
+<li>そして、Gitでは<strong>リポジトリとワークツリーの間にはインデックスというものが存在</strong>しています。</li><li>インデックスとは<blockquote>
+<p>リポジトリにコミットする準備をするための場所のことです。<br>= 作業用dirとレポジトリの間.変更をステージに集めるためのもの</p>
+</blockquote>
+</li></ul>
+</li><li><p>コミットでファイルの状態を記録するためには、<strong>まずインデックスにファイルを登録する必要があります。</strong></p>
+</li></ul><h1 id="使用パターン"><a name="使用パターン" href="#使用パターン"></a>使用パターン</h1><h2 id="戻す"><a name="戻す" href="#戻す"></a>戻す</h2><ul>
+<li><p>作業ステージでファイルの変更,(git statusで確認「modified ファイル名」),まだインデックスにステージングしていない かつ先ほどの変更を取り消す場合</p>
+<blockquote>
+<p><strong>git checkout — 変更を取り消したいファイル名</strong></p>
+</blockquote>
+</li><li><p>さっきコミットしたが、少し変更したい(ただタブを入れるだけ).でもわざわざ新しくコミットするほどでもない.(-&gt;細かい変更もいちいちコミットしてたら非効率)</p>
+</li><li><p><strong>先ほどのコミットに変更を反映させる</strong></p>
+<blockquote>
+<p>変更<br>git add .<br><strong>git —amed</strong></p>
+</blockquote>
+</li><li><p>インデックスのステージングも含めて、一つ前のコミットの状態に戻したい</p>
+<blockquote>
+<p><strong>git reset —hard HEAD</strong></p>
+</blockquote>
+</li><li><p>インデックスのステージングも含めて、指定したコミットの状態に戻したい</p>
+<blockquote>
+<p><strong>git reset —hard commitID</strong></p>
+<blockquote>
+<p><strong>ただし、HEADから指定したコミットまでのコミット履歴は全部消える</strong></p>
+<blockquote>
+<p>ex)HEAD,commit2,commit1が履歴であった時に、commit1に戻すとHEADとcommit2は消えてしまう</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<ul>
+<li>やっぱり、commit2に戻したい!そんな場合、前回のリセットの時のHEADを記録している機能がある<blockquote>
+<p><strong>git reset —hard ORIG_HEAD</strong></p>
+</blockquote>
+</li></ul>
+</li></ul><h2 id="差分"><a name="差分" href="#差分"></a>差分</h2><ul>
+<li><p>作業ステージにある段階でも差分を確認できる(前回のコミットの内容からの比較)</p>
+<blockquote>
+<p><strong>git diff file.txt</strong></p>
+</blockquote>
+</li><li><p>一方、インデックスステージに置いた場合の差分チェック</p>
+<blockquote>
+<p><strong>git diff —cached</strong></p>
+</blockquote>
+</li></ul><h2 id="ブランチ(新機能の開発時などに使う)"><a name="ブランチ(新機能の開発時などに使う)" href="#ブランチ(新機能の開発時などに使う)"></a>ブランチ(新機能の開発時などに使う)</h2><blockquote>
+<p><strong>git checkout -b  hoge</strong></p>
+</blockquote><ul>
+<li>ブランチ先でのコミットは、ブランチ時にmasterから引き継いだコミット履歴の上にどんどん重ねられていく</li><li>マージ<blockquote>
+<p><strong>git merge branch1</strong><br>(おまけ:削除)git branch -d branch1</p>
+</blockquote>
+</li></ul><h3 id="マージの衝突"><a name="マージの衝突" href="#マージの衝突"></a>マージの衝突</h3><ul>
+<li>例えば、masterとbranch1それぞれで、同じファイルに対して別々の変更を加え、マージしようとする<ul>
+<li>衝突が起きる</li><li><strong>対策)衝突箇所を編集して、コミットする</strong></li><li>(おまけ)衝突時の両方のコミット履歴も一応保存はされている</li></ul>
+</li></ul><h2 id="tag"><a name="tag" href="#tag"></a>tag</h2><ul>
+<li><p>直近のコミットにtagをつける</p>
+<blockquote>
+<p><strong>git tag v1.0</strong></p>
+<blockquote>
+<p>(おまけ:タグ一覧) git tag<br>(おまけ) git show v1.0</p>
+</blockquote>
+</blockquote>
+</li><li><p>過去のコミットにtagをつける</p>
+<blockquote>
+<p>git tag v0.9 commitID</p>
+</blockquote>
+</li><li><p>tagの削除</p>
+<blockquote>
+<p>git tag -d v0.9</p>
+</blockquote>
+</li></ul><h2 id="エイリアス"><a name="エイリアス" href="#エイリアス"></a>エイリアス</h2><blockquote>
+<p>git config —global alias.co checkout<br>git config —global alias.st status</p>
+</blockquote><h1 id="よく使われるコマンド"><a name="よく使われるコマンド" href="#よく使われるコマンド"></a>よく使われるコマンド</h1><ul>
+<li><p>vi .gitignore</p>
+<blockquote>
+<p>管理対象外のファイルを設定</p>
+</blockquote>
+</li><li><p>git log -p</p>
+</li><li><p>git log —stat</p>
+<blockquote>
+<p>どのファイルが何箇所変更されたか</p>
+</blockquote>
+</li><li><p>add</p>
+<blockquote>
+<p>ファイルの内容のインデックスへの追加<br>ステージされただけでcommitの前段階(次のcommit予定)</p>
+<blockquote>
+<p>addとcommitの二回に分けているのは、追加,削除,変更するたびにリポジトリが更新されていては壊れやすいレポジトリとなってしまうから</p>
+</blockquote>
+</blockquote>
+</li><li><p>bisect</p>
+<blockquote>
+<p>バグを持ち込んだ変更の二分探索</p>
+</blockquote>
+</li><li><p>commit</p>
+<blockquote>
+<p>リポジトリへの変更の記録</p>
+<blockquote>
+<p>commit後に #git status　を実行しても何も表示されない(ステージしているものがない状態)</p>
+</blockquote>
+</blockquote>
+</li></ul><ul>
+<li><p>grep</p>
+<blockquote>
+<p>パターンにマッチする行の検索</p>
+</blockquote>
+</li><li><p>rebase</p>
+<blockquote>
+<p>ローカルコミットの上流の先頭に合わせた前方移植</p>
+</blockquote>
+</li></ul><p>-タグの使い方</p><blockquote>
+<p>git tag -m “version 1.0” V1.0 6e897e20197f626a522ec3084fd273c73e5efdee<br>git rev-parse V1.0</p>
+</blockquote><ul>
+<li>リポジトリやインデックスにあるファイルはトレースできる</li><li><p>一般的な無視(ignored)するファイル</p>
+<ul>
+<li>一時ファイル、作業ファイル</li></ul>
+</li><li><p>HEAD…常にカレントブランチの最新のコミットを参照(自動で)</p>
+</li></ul><h1 id="git-bisectを使う"><a name="git-bisectを使う" href="#git-bisectを使う"></a>git bisectを使う</h1><ul>
+<li>二分探索でどんどん絞り込んでくれる</li><li>ユーザーは範囲指定のためにこのリビジョンはgoodかbadかを聞かれるのでそれに答えていく</li><li>実行例<blockquote>
+<p>$git bisect start =&gt;検索の開始をGitに指示<br>これからどのコミットがbadなのかを知らせる(大抵は現在のversionが該当する)ので現在のHEADのリビジョンをデフォルトとして使える<br>$ git bisect bad<br>git bisect good v2.6 =&gt;動作するバージョンを指示<br>(おまけ) $ git bisect log =&gt; goodかbadか答えた履歴を見れる<br>(おまけ) $ git bisect visualize —pretty=oneline =&gt;検索範囲のコミットを視覚的に見せる.ただしツールとして<strong>gitk</strong>が必要<br>$ git bisect reset =&gt;検索の終了と元のブランチに戻る</p>
+</blockquote>
+</li></ul><h1 id="branchを使う"><a name="branchを使う" href="#branchを使う"></a>branchを使う</h1><ul>
+<li>masterブランチは最も堅牢で信頼性のあるものとする</li><li>バグ修正用のブランチbugを作ったとする</li><li>そして個々のバグ修正用のためにブランチを作る時の名前はスラッシュ記法を使うと良い<ul>
+<li>ex) bug/malloc やbug/communication</li><li>なぜなら<strong>$git show-branch <code>bug/*</code> のようにワイルドカードが使えて便利</strong>だから</li></ul>
+</li></ul><h1 id="差分"><a name="差分" href="#差分"></a>差分</h1><ul>
+<li><p>—colorオプションをつけて色をつけるべし</p>
+<blockquote>
+<p>$diff オリジナルファイル 新しいファイル<br><strong>-記号で始まる行</strong>は新しいファイルを作るために、オリジナルファイルから削除する必要があることを意味する<br><strong>プラス記号で始まる行</strong>は新しいファイルを作るために，オリジナルファイルへ追加する必要があることを意味する</p>
+</blockquote>
+</li><li><p>$git diff</p>
+<blockquote>
+<p>作業用dirとインデックスの差異を示す</p>
+</blockquote>
+</li><li><p>$git diff commit</p>
+<blockquote>
+<p>作業用dirとcommitの差異</p>
+</blockquote>
+</li><li><p>$git diff commit1 commit2</p>
+<blockquote>
+<p>作業用dirとインデックスは無視され，commit1とcommit2の差異を示す</p>
+</blockquote>
+</li></ul><h2 id="パス制限を用いたgit-ditt"><a name="パス制限を用いたgit-ditt" href="#パス制限を用いたgit-ditt"></a>パス制限を用いたgit ditt</h2><blockquote>
+<p>$git diff —stat master~5 master Documentation =&gt;Documentationの変更だけに限定<br>$git diff —stat master~5 master Documentation/index.html =&gt;Documentation.index.htmlファイルの変更だけに限定</p>
+<p>$git diff -S “ocutpas” master~50</p>
+<blockquote>
+<p>masterブランチからstirngを含む過去のコミットを50件検索</p>
+</blockquote>
+</blockquote><h1 id="マージ"><a name="マージ" href="#マージ"></a>マージ</h1><ul>
+<li>コミット履歴のある2つ以上のブランチを結合<ul>
+<li>よくあるのが2つのブランチのマージ</li></ul>
+</li><li>マージの準備<ul>
+<li>作業用dirに変更されたファイルがあったり、インデックスにまだ変更が残っているのは望ましくない</li><li>なぜならマージすると完了後に作成たファイルを作業dirに配置するから</li></ul>
+</li><li>マージ後にグラフ形式でみてみる<blockquote>
+<p>$git log —graph —pretty=online —abbrev-commit</p>
+</blockquote>
+</li></ul><h2 id="競合を伴うマージ"><a name="競合を伴うマージ" href="#競合を伴うマージ"></a>競合を伴うマージ</h2><ul>
+<li>スキップ</li></ul><h1 id="コミットの変更"><a name="コミットの変更" href="#コミットの変更"></a>コミットの変更</h1><ul>
+<li>git reset<blockquote>
+<p>HEADの参照をしていされたコマンドに変更し、インデックスもそのコミットに合わせて更新<br>必要なら作業dirに反映することもできる</p>
+</blockquote>
+</li></ul><table>
+<thead>
+<tr>
+<th>引数</th>
+<th>HEAD</th>
+<th>インデックス</th>
+<th>作業dir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—soft</td>
+<td>o</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>—mixed</td>
+<td>o</td>
+<td>o</td>
+<td></td>
+</tr>
+<tr>
+<td>—hard</td>
+<td>o</td>
+<td>o</td>
+<td>o</td>
+</tr>
+</tbody>
+</table><ul>
+<li><p>$git cherry-pick</p>
+<blockquote>
+<p>指定されたコミットが持ち込んだ変更をカレントブランチに適用</p>
+</blockquote>
+</li><li><p>$git revert</p>
+<blockquote>
+<p>指定されたコミットの効果を打ち消す</p>
+</blockquote>
+</li></ul>
+
+<footer style="position:fixed; font-size:.8em; text-align:right; bottom:0px; margin-left:-25px; height:20px; width:100%;">generated by <a href="http://pad.haroopress.com" target="_blank">haroopad</a></footer>
+</body>
+</html>
