@@ -29,3 +29,6 @@ ex)
 >参考) http://www.javaroad.jp/opensource/js_eclipse12.htm
 
 >try/catchブロック、for（配列の繰り返し）、do（do while 文）などをテンプレートとして設定しており、自動追記してくれます。テンプレートを適用したい箇所を選択し、「ソース」→「囲む」から該当のテンプレートを選択します。
+
+## debug
+- servlet or jspのデバッグ方法を確立すること
