@@ -49,3 +49,7 @@ ex)
 
 ## debug
 - servlet or jspのデバッグ方法を確立すること
+
+## 開発手順
+- 小さいほうから大きいほうへ
+> DTO => DAO => Action(Java) or 表示系 => Controller(Servlet)
