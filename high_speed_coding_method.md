@@ -47,9 +47,14 @@ ex)
 
 - ctrl + d ...一行削除
 
-## debug
-- servlet or jspのデバッグ方法を確立すること
+- ctrl + shit + t ... クラスおよびクラスに準ずるもののソースファイルをクラス名でサーチ
+- Alt + left or right ... ヒストリデバッグ=直前に参照していたソースに戻る
 
+## debug
+- servlet or jspのデバッグ方法を確立すること...By Eclipse
+ - servletなどのロジック部分にブレークポイントを置き、.html/直接servletをデバッグモードで実行するだけ
+ - 標準入力を受け付けるプログラムなどの場合はコンソールに値を入力してから、「再開」を実行する
+ > ※この標準入力を受け付けることがjdbデバッガだとできない、正確にはやる方法が調べてもわからないからEclipseでやることとした
 ## 開発手順
 - 小さいほうから大きいほうへ
 > DTO => DAO => Action(Java) or 表示系 => Controller(Servlet)
