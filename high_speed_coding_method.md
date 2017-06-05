@@ -58,3 +58,7 @@ ex)
 ## 開発手順
 - 小さいほうから大きいほうへ
 > DTO => DAO => Action(Java) or 表示系 => Controller(Servlet)
+
+# DB
+- sql文の自動生成
+> postgres + pgAdmin
